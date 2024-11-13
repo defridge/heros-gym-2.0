@@ -1,0 +1,159 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Montserrat", serif;
+}
+
+/* Allow main content to grow and push the footer down */
+main {
+  flex: 1; /* Fills available space, pushing footer to bottom if content is short */
+}
+
+.menu {
+  justify-content: end;
+}
+
+.memberships {
+  min-height: 350px;
+}
+
+.cust-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cust-gray {
+  background-color: #dee2e6;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+}
+
+.trainer-one,
+.trainer-two,
+.trainer-three {
+  width: 40%;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.card-header {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.timetable-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-content {
+  font-size: 0;
+}
+
+.hero-section {
+  background-image: url("../images/IMG_4232-min.webp"); /* High-quality gym image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.title-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.title-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.tagline-text {
+  font-size: 1.2rem;
+  color: #6c757d; /* Subtle gray color */
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.trainer-card-image {
+  height: 400px; /* Set a desired height for consistency */
+  object-fit: cover; /* Crop image to fit the container while preserving aspect ratio */
+  width: 100%; /* Ensures the image fills the width of the container */
+}
+
+/* Commonly used for tablets in portrait mode */
+@media (max-width: 768px) {
+  /* Styles for tablets in portrait mode */
+  .table th,
+  .table td {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .first-col {
+    min-width: 100px;
+  }
+
+  .trainer-one,
+  .trainer-two,
+  .trainer-three {
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-contact-info {
+    text-align: center;
+  }
+}
