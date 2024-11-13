@@ -122,6 +122,12 @@ main {
   width: 100%; /* Ensures the image fills the width of the container */
 }
 
+.facilities-class-img {
+  height: 250x; /* Set a desired height for consistency */
+  object-fit: cover; /* Crop image to fit the container while preserving aspect ratio */
+  width: 100%; /* Ensures the image fills the width of the container */
+}
+
 /* Commonly used for tablets in portrait mode */
 @media (max-width: 768px) {
   /* Styles for tablets in portrait mode */
