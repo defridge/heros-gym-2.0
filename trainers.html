@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hero's Gym</title>
+    <title>
+      Meet Our Trainers at Hero's Gym - Personal Trainers in North Dublin
+    </title>
+    <meta
+      name="description"
+      content="Discover the expert personal trainers at Hero's Gym. Learn about Luke, Ben, and Sophie, their specialties, and how they can help you achieve your fitness goals in North Dublin."
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -15,13 +21,35 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.webp" alt="" width="100" />
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/logo.webp"
+            alt="Hero's Gym Logo"
+            width="100"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -73,11 +101,14 @@
         <div class="row">
           <!-- Trainer 1 -->
           <div class="col-12 mb-4">
-            <div class="card text-bg-danger flex-md-row align-items-center">
+            <div
+              id="luke"
+              class="card text-bg-danger flex-md-row align-items-center"
+            >
               <img
                 src="assets/images/Pic-23-min.webp"
                 class="card-img-left img-fluid rounded-start trainer-one trainer-img"
-                alt="Picture of owner and trainer Luke Masterson"
+                alt="Luke Masterson - Owner and Personal Trainer at Hero's Gym"
               />
               <div class="card-body">
                 <h2 class="card-title">Luke</h2>
@@ -124,12 +155,13 @@
           <!-- Trainer 2 -->
           <div class="col-12 mb-4">
             <div
+              id="ben"
               class="card text-bg-dark flex-md-row-reverse align-items-center"
             >
               <img
                 src="assets/images/unnamed-min.webp"
                 class="card-img-right img-fluid rounded-end trainer-two trainer-img"
-                alt="Picture of trainer Ben Chequer"
+                alt="Ben Chequer - Personal Trainer at Hero's Gym"
               />
               <div class="card-body">
                 <h2 class="card-title">Ben</h2>
@@ -182,11 +214,14 @@
 
           <!-- Trainer 3 -->
           <div class="col-12 mb-4">
-            <div class="card text-bg-danger flex-md-row align-items-center">
+            <div
+              id="sophie"
+              class="card text-bg-danger flex-md-row align-items-center"
+            >
               <img
                 src="assets/images/WhatsApp-Image-2024-07-18-at-12.03.44-min.webp"
                 class="card-img-left img-fluid rounded-start trainer-three trainer-img"
-                alt="Trainer 3"
+                alt="Sophie - Personal Trainer at Hero's Gym"
               />
               <div class="card-body">
                 <h2 class="card-title">Sophie</h2>
@@ -297,6 +332,53 @@
 
       <p>&copy; 2024 Hero's Gym. All rights reserved.</p>
     </footer>
+    <!-- Trainer Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Luke Masterson",
+        "jobTitle": "Owner & Personal Trainer",
+        "worksFor": {
+          "@type": "HealthClub",
+          "name": "Hero's Gym"
+        },
+        "email": "info@herosgymtslc.com",
+        "telephone": "+353876573910",
+        "image": "assets/images/Pic-23-min.webp",
+        "sameAs": "https://www.instagram.com/herosgym_trinitysports/"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ben Chequer",
+        "jobTitle": "Personal Trainer",
+        "worksFor": {
+          "@type": "HealthClub",
+          "name": "Hero's Gym"
+        },
+        "email": "ben@herosgymtslc.com",
+        "sameAs": "https://www.instagram.com/bc.the.pt/",
+        "image": "assets/images/unnamed-min.webp"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sophie",
+        "jobTitle": "Personal Trainer",
+        "worksFor": {
+          "@type": "HealthClub",
+          "name": "Hero's Gym"
+        },
+        "email": "coachsoph.pt@gmail.com",
+        "sameAs": "https://www.instagram.com/soph_thecoach/",
+        "image": "assets/images/WhatsApp-Image-2024-07-18-at-12.03.44-min.webp"
+      }
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

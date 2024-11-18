@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Hero's Gym - Your Path to Strength, Fitness & Community in Dublin, Ireland
-    </title>
+    <title>Hero's Gym - Strength, Fitness & Community in North Dublin</title>
     <meta
       name="description"
-      content="Welcome to Hero's Gym, Dublin's premier fitness center offering expert trainers, state-of-the-art facilities, and a supportive community for all fitness levels. Join today and start your journey to a healthier, stronger you."
+      content="Hero's Gym: Dublin's premier fitness center. Expert trainers, state-of-the-art facilities, and a community for all fitness levels. Join today!"
     />
     <!-- SEO Keywords -->
     <meta
@@ -28,6 +26,24 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
 
   <body>
@@ -37,7 +53,7 @@
           <a class="navbar-brand" href="index.html">
             <img
               src="assets/images/logo.webp"
-              alt="Hero's Gym Log"
+              alt="Hero's Gym Logo, North Dublin Fitness Center"
               width="100"
             />
           </a>
@@ -196,7 +212,7 @@
               <div class="card-body">
                 <h5 class="card-title">Luke</h5>
                 <p class="card-text">Owner & Personal Trainer</p>
-                <a href="trainers.html" class="btn btn-outline-danger mt-2"
+                <a href="trainers.html#luke" class="btn btn-outline-danger mt-2"
                   >Meet Luke</a
                 >
               </div>
@@ -212,7 +228,9 @@
               <div class="card-body">
                 <h5 class="card-title">Sophie</h5>
                 <p class="card-text">Personal Trainer</p>
-                <a href="trainers.html" class="btn btn-outline-danger mt-2"
+                <a
+                  href="trainers.html#sophie"
+                  class="btn btn-outline-danger mt-2"
                   >Meet Sophie</a
                 >
               </div>
@@ -228,7 +246,7 @@
               <div class="card-body">
                 <h5 class="card-title">Ben</h5>
                 <p class="card-text">Personal Trainer</p>
-                <a href="trainers.html" class="btn btn-outline-danger mt-2"
+                <a href="trainers.html#ben" class="btn btn-outline-danger mt-2"
                   >Meet Ben</a
                 >
               </div>
@@ -497,5 +515,43 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HealthClub",
+        "name": "Hero's Gym",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "The Hole In The Wall Road",
+          "addressLocality": "Dublin 13",
+          "addressCountry": "Ireland"
+        },
+        "telephone": "+353876573910",
+        "email": "info@herosgymtslc.com",
+        "url": "https://www.herosgymtslc.ie",
+        "image": "assets/images/logo.webp",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+            "opens": "06:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "06:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "18:00"
+          }
+        ]
+      }
+    </script>
   </body>
 </html>
