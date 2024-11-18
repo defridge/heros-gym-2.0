@@ -123,7 +123,7 @@ main {
 }
 
 .facilities-class-img {
-  height: 250x; /* Set a desired height for consistency */
+  height: 250px; /* Set a desired height for consistency */
   object-fit: cover; /* Crop image to fit the container while preserving aspect ratio */
   width: 100%; /* Ensures the image fills the width of the container */
 }
