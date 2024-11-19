@@ -77,7 +77,7 @@ main {
 }
 
 .hero-section {
-  background-image: url("../images/IMG_4232-min.webp"); /* High-quality gym image */
+  background-image: url("../images/banner.webp"); /* High-quality gym image */
   background-size: cover;
   background-position: center;
   height: 100vh;
